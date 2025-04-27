@@ -1,83 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    background: #ececec;
-  }
+  font-family:  sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.weather-theme {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.weather-theme h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.weather-theme .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.weather-theme button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .weather-theme {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 350px;
-    transition: background 0.5s, color 0.5s;
-  }
-  
-  .weather-theme.default {
-    background: #ffffff;
-    color: #333;
-  }
-  
-  .weather-theme.sunny {
-    background: linear-gradient(to top, #fceabb, #f8b500);
-    color: #333;
-  }
-  
-  .weather-theme.rainy {
-    background: linear-gradient(to top, #4facfe, #00f2fe);
-    color: #ffffff;
-  }
-  
-  .weather-theme.cloudy {
-    background: linear-gradient(to top, #d7d2cc, #304352);
-    color: #ffffff;
-  }
-  
-  .weather-theme.snowy {
-    background: linear-gradient(to top, #e0eafc, #cfdef3);
-    color: #333;
-  }
-  
-  .weather-theme.stormy {
-    background: linear-gradient(to top, #373b44, #4286f4);
-    color: #ffffff;
-  }
-  
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .description {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
+}
+
+.weather-theme button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.weather-theme p.description {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.weather-theme.sunny {
+  background: linear-gradient(135deg, #ffeb3b, #ff9800);
+  color: #fff;
+}
+
+.weather-theme.rainy {
+  background: linear-gradient(135deg, #64b5f6, #1976d2);
+  color: #fff;
+}
+
+.weather-theme.cloudy {
+  background: linear-gradient(135deg, #90a4ae, #607d8b);
+  color: #fff;
+}
+
+.weather-theme.snowy {
+  background: linear-gradient(135deg, #81d4fa, #0288d1);
+  color: #fff;
+}
+
+.weather-theme.stormy {
+  background: linear-gradient(135deg, #3e2723, #212121);
+  color: #fff;
+}
+
+.weather-theme.sunny,
+.weather-theme.rainy,
+.weather-theme.cloudy,
+.weather-theme.snowy,
+.weather-theme.stormy {
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
