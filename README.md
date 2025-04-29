@@ -1,5 +1,24 @@
 ![App Screenshot](src/assets/Weather.jpg)
 
+# 🌤️ Weather Theme Changer
+
+A sleek and responsive **React app** that changes its theme based on the selected weather condition. From sunny vibes to rainy gloom, it dynamically adjusts UI visuals and styles.
+
+---
+
+## 📌 Features
+- ✅ **Weather Options**: Choose from weather types like Sunny, Rainy, Cloudy, etc.
+- ✅ **Dynamic Themes**: Background, icons, and colors change with the weather.
+- ✅ **Responsive Design**: Mobile-friendly layout.
+- ✅ **Minimal Dependencies**: Clean and lightweight.
+
+---
+
+## 🛠️ Technologies Used
+- ⚛️ **React**
+- 🎨 **CSS Modules / SCSS**
+- ☁️ **Conditional Rendering**
+
 ---
 
 ## 🚀 Live Demo
