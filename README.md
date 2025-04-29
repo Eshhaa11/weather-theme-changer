@@ -1,4 +1,4 @@
-![App Screenshot](src/assets/imagee.jpg)
+![App Screenshot](src/assets/Weather.jpg)
 
 ---
 
