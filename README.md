@@ -27,11 +27,11 @@ To see it in action, clone the repository and follow the setup instructions belo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Eshhaa11/drag-drop-task-board
+   git clone https://github.com/Eshhaa11/weather-theme-changer
 
 2. **Navigate to the project directory:**
 
-   cd drag-drop-task-board
+   cd weather-theme-changer
 
 3. **Install dependencies:**
 
